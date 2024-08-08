@@ -1,0 +1,72 @@
+.CameraParent{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+  .modalbodyback{
+    background: transparent;
+  }
+  .imageshow{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .imageshow img{
+    width: 500px;
+    height: 250px;
+  }
+  .Camerabox:hover{
+    scale: 1.05;
+    transition: 90ms;
+    cursor: pointer;
+  }
+  .hellobab{
+    background: black !important;
+    width: 100% !important;
+  }
+
+  .wajji{
+    background-color: 'red';
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1400px) { 
+    .custom-col-4 { 
+      /* flex: 0 0 auto; */
+      width: 33.333333%;
+      
+      background-color: red;
+      padding: 0px;
+      gap: 5px;
+
+      
+      
+      
+      
+     
+      
+      
+
+
+      
+    }
+    .custom-col-8 {
+      flex: 0 0 auto;
+      width: 66.666667%;
+     padding: 0px;
+     
+      
+
+      
+    }
+    .rowProgress{
+        height: 100%;
+    }
+    .gateName {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+  }
+  
