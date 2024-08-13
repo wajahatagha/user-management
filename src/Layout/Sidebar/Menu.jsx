@@ -1,19 +1,39 @@
+import dash from './../../assets/icons/dashboard.png';
+
 export const MENUITEMS = [
   {
-    menutitle: "General",
+    
     menucontent: "Dashboards,Widgets",
     Items: [
+      // {
+      //   title: "Super",
+      //   icon: `home`,
+      //   type: "link",
+      //   // badge: "badge badge-light-primary",
+      //   // badgetxt: "5",
+      //   active: false,
+      //   path: `${process.env.PUBLIC_URL}/dashboard/default`, title: "Super Admin ", type: "link" ,
+      //   children: [
+      //     // { path: `${process.env.PUBLIC_URL}/dashboard/Super`, title: "Practice", type: "link" },
+      //     // { path: `${process.env.PUBLIC_URL}/dashboard/global`, title: "Global Dashboard", type: "link" },
+          
+
+      //     // { path: `${process.env.PUBLIC_URL}/dashboard/e-commerce`, title: "E-commerce", type: "link" },
+      //     // { path: `${process.env.PUBLIC_URL}/dashboard/online-course`, title: "Online Course", type: "link" },
+      //     // { path: `${process.env.PUBLIC_URL}/dashboard/crypto`, title: "Crypto", type: "link" },
+      //     // { path: `${process.env.PUBLIC_URL}/dashboard/social`, title: "Social", type: "link" },
+      //   ],
+      // },
       {
         title: "Dashboard",
-        icon: "home",
-        type: "sub",
+        icon: `widget`,
+        type: "link",
         // badge: "badge badge-light-primary",
         // badgetxt: "5",
         active: false,
+         path: `${process.env.PUBLIC_URL}/dashboard/Dashboard`, title: "Dashboard", type: "link" ,
         children: [
-          { path: `${process.env.PUBLIC_URL}/dashboard/default`, title: "Dashboard", type: "link" },
-          { path: `${process.env.PUBLIC_URL}/dashboard/Super`, title: "Practice", type: "link" },
-          { path: `${process.env.PUBLIC_URL}/dashboard/global`, title: "Global Dashboard", type: "link" },
+
           
 
           // { path: `${process.env.PUBLIC_URL}/dashboard/e-commerce`, title: "E-commerce", type: "link" },
@@ -22,7 +42,54 @@ export const MENUITEMS = [
           // { path: `${process.env.PUBLIC_URL}/dashboard/social`, title: "Social", type: "link" },
         ],
       },
- 
+      {
+        title: "Live Reports",
+        icon: `widget`,
+        type: "link",
+        // badge: "badge badge-light-primary",
+        // badgetxt: "5",
+        active: false,
+        //  path: `${process.env.PUBLIC_URL}/dashboard/global`, title: "Dashboard", type: "link" ,
+      path: `${process.env.PUBLIC_URL}/dashboard/LiveReports`, title: "Live Reports", type: "link" ,
+        children:[],
+       
+      },
+      {
+        title: "Weekly Reports",
+        icon: `task`,
+        type: "link",
+        // badge: "badge badge-light-primary",
+        // badgetxt: "5",
+        active: false,
+         path: `${process.env.PUBLIC_URL}/dashboard/WeeklyReports`, title: "Weekly Reports", type: "link" ,
+        children: [
+
+          
+
+          // { path: `${process.env.PUBLIC_URL}/dashboard/e-commerce`, title: "E-commerce", type: "link" },
+          // { path: `${process.env.PUBLIC_URL}/dashboard/online-course`, title: "Online Course", type: "link" },
+          // { path: `${process.env.PUBLIC_URL}/dashboard/crypto`, title: "Crypto", type: "link" },
+          // { path: `${process.env.PUBLIC_URL}/dashboard/social`, title: "Social", type: "link" },
+        ],
+      },
+      {
+        title: "Monthly Reports",
+        icon: `bookmark`,
+        type: "link",
+        // badge: "badge badge-light-primary",
+        // badgetxt: "5",
+        active: false,
+         path: `${process.env.PUBLIC_URL}/dashboard/MonthlyReports`, title: "Monthly Reports", type: "link" ,
+        children: [
+
+          
+
+          // { path: `${process.env.PUBLIC_URL}/dashboard/e-commerce`, title: "E-commerce", type: "link" },
+          // { path: `${process.env.PUBLIC_URL}/dashboard/online-course`, title: "Online Course", type: "link" },
+          // { path: `${process.env.PUBLIC_URL}/dashboard/crypto`, title: "Crypto", type: "link" },
+          // { path: `${process.env.PUBLIC_URL}/dashboard/social`, title: "Social", type: "link" },
+        ],
+      },
 
 
       // {

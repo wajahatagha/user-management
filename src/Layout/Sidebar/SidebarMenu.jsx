@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { ArrowRight, ArrowLeft } from 'react-feather';
 import CustomizerContext from '../../_helper/Customizer';
 import SidebarMenuItems from './SidebarMenuItems';
+import Footer from './Footer';
 
 const SidebarMenu = ({ setMainMenu, props, sidebartoogle, setNavActive, activeClass, width }) => {
   const { customizer } = useContext(CustomizerContext);
@@ -36,7 +37,8 @@ const SidebarMenu = ({ setMainMenu, props, sidebartoogle, setNavActive, activeCl
 
 
   return (
-    <nav className="sidebar-main" id="sidebar-main">
+    <>
+    <nav style={{border:'0px solid black', overflow:'auto'}}  className="sidebar-main" id="sidebar-main">
       <div className="left-arrow" onClick={scrollToLeft}>
         <ArrowLeft />
       </div>
@@ -46,22 +48,28 @@ const SidebarMenu = ({ setMainMenu, props, sidebartoogle, setNavActive, activeCl
           wrapper.split(' ').includes('horizontal-wrapper')
             ? { marginLeft: margin + 'px' }
             : { margin: '0px' }
+         
         }
       >
-        <ul className="sidebar-links custom-scrollbar">
-          <li className="back-btn">
-            <div className="mobile-back text-end">
+        <ul  className="sidebar-links custom-scrollbar">
+          <li  className="back-btn">
+            <div  className="mobile-back text-end">
               <span>{'Back'}</span>
               <i className="fa fa-angle-right ps-2" aria-hidden="true"></i>
+     
             </div>
           </li>
           <SidebarMenuItems setMainMenu={setMainMenu} props={props} sidebartoogle={sidebartoogle} setNavActive={setNavActive} activeClass={activeClass} />
         </ul>
       </div>
       <div className="right-arrow" onClick={scrollToRight}>
-        <ArrowRight />
+        {/* <ArrowRight /> */}
       </div>
+  
     </nav>
+   
+   
+    </>
   );
 
 };

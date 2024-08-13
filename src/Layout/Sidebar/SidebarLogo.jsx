@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { Image } from '../../AbstractElements';
 import CubaIcon from '../../assets/images/logo/logo.png';
 import CustomizerContext from '../../_helper/Customizer';
+import shan from './../../assets/icons/Shan.png'
+import './sidebarHeader.css'
 
 const SidebarLogo = () => {
   const { mixLayout, toggleSidebar, toggleIcon, layout, layoutURL } = useContext(CustomizerContext);
@@ -15,22 +17,22 @@ const SidebarLogo = () => {
   const layout1 = localStorage.getItem("sidebar_layout") || layout;
 
   return (
-    <div className='logo-wrapper'>
+    <div style={{boxShadow: 'none'}} className='logo-wrapper'>
       {layout1 !== 'compact-wrapper dark-sidebar' && layout1 !== 'compact-wrapper color-sidebar' && mixLayout ? (
-        <Link to={`${process.env.PUBLIC_URL}/dashboard/default/${layoutURL}`}>
-          <Image attrImage={{ className: 'img-fluid d-inline', src: `${CubaIcon}`, alt: '' }} />
+        <Link  to={`${process.env.PUBLIC_URL}/dashboard/default/${layoutURL}`}>
+          <Image  attrImage={{ className: 'img-fluid d-inline ', src: `${shan}`, alt: '' }} />
         </Link>
       ) : (
-        <Link to={`${process.env.PUBLIC_URL}/dashboard/default/${layoutURL}`}>
-          <Image attrImage={{ className: 'img-fluid d-inline', src: `${require('../../assets/images/logo/logo_dark.png')}`, alt: '' }} />
+        <Link  to={`${process.env.PUBLIC_URL}/dashboard/default/${layoutURL}`}>
+          <Image  attrImage={{ className: 'img-fluid px-4' ,src: `${shan}`, alt: '' }} />
         </Link>
       )}
       <div className='back-btn' onClick={() => openCloseSidebar()}>
         <i className='fa fa-angle-left'></i>
       </div>
-      <div className='toggle-sidebar' onClick={openCloseSidebar}>
+      {/* <div className='toggle-sidebar' onClick={openCloseSidebar}>
         <Grid className='status_toggle middle sidebar-toggle' />
-      </div>
+      </div> */}
     </div>
   );
 };

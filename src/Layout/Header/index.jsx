@@ -144,11 +144,11 @@ const Header = () => {
               </div>
             </div>
           </Form> */}
-          <Col className='' xl='6' lg='6' md='6' sm='6' xs='6'>
+          <Col className='' xl='6' lg='6' md='6' sm='1' xs='1'>
           
           <Leftbar />
           </Col>
-          <Col  className='col-auto p-0'  xl='6' lg='6' md='6' sm='6' xs='6'>
+          <Col  className='col-auto p-0'  xl='6' lg='6' md='6' sm='11' xs='11'>
           <RightHeader />
           </Col>
         </Row>

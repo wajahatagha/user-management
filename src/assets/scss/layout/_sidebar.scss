@@ -177,7 +177,7 @@
             .mode {
               &.active {
                 svg {
-                  fill: $white;
+                  fill: #0b57d0;
                 }
               }
             }
@@ -358,7 +358,7 @@
                 transition: all 0.3s ease;
 
                 &:hover {
-                  stroke: var(--theme-default);
+                  stroke: white;
                   transition: all 0.3s ease;
                 }
               }
@@ -633,12 +633,12 @@
             &:hover {
               a {
                 span {
-                  color: var(--theme-default);
+                  color: white;
                   transition: color 0.3s ease;
                 }
 
                 svg {
-                  stroke: var(--theme-default);
+                  stroke: white;
                   transition: stroke 0.3s ease;
 
                   path {
@@ -745,7 +745,8 @@
             }
           }
           &.active {
-            color: var(--theme-default);
+          border-radius: 10px;
+            color:white;
             font-weight: 500;
           }
         }
@@ -769,10 +770,10 @@
                 svg {
                   transition: all 0.3s ease;
                   &.stroke-icon {
-                    stroke: var(--theme-default);
+                    stroke: white;
                   }
                   &.fill-icon {
-                    fill: var(--theme-default);
+                    fill: #0b57d0;
                   }
                 }
               }
@@ -913,10 +914,10 @@
                   li {
                     a {
                       &.active {
-                        color: var(--theme-default);
+                        color: white;
 
                         &:after {
-                          background-color: var(--theme-default);
+                          background-color: #0b57d0;
                         }
                       }
                     }
@@ -933,7 +934,7 @@
               &:hover {
                 > a {
                   > span {
-                    color: var(--theme-default);
+                    color: white;
                     transition: all 0.3s ease;
                   }
                 }
@@ -975,7 +976,8 @@
 
                 &.active {
                   //background-image: linear-gradient(90deg, var(--theme-default) 0%, #a26cf8 100%);
-                  background-color: lighten($primary-color, 22%);
+                  background-color: #0b57d0;
+                  border-radius: 10px;
                   transition: all 0.3s ease;
 
                   svg,
@@ -1032,12 +1034,12 @@
                     }
 
                     &:hover {
-                      color: var(--theme-default);
+                      color: white;
                       letter-spacing: 1.5px;
                       transition: all 0.3s ease;
 
                       &:after {
-                        background-color: var(--theme-default);
+                        background-color: #0b57d0;
                       }
                     }
                   }
@@ -1538,8 +1540,9 @@
                   &:hover {
                     > a {
                       &:hover {
-                        background-color: rgba($primary-color, 0.07);
+                        background-color: #0b57d0;
                         transition: all 0.3s ease;
+                        border-radius: 10px;
                       }
                     }
                   }
@@ -1549,23 +1552,23 @@
                   .sidebar-link:not(.active) {
                     &:hover {
                       svg {
-                        fill: rgba($primary-color, 0.1%);
-                        stroke: var(--theme-default);
+                        fill: #0b57d0;
+                        stroke: white;
                         transition: all 0.3s ease;
                         &.fill-icon {
-                          fill: var(--theme-default);
+                          fill: #0b57d0;
                           stroke: none;
                         }
                       }
 
                       span {
-                        color: var(--theme-default);
+                        color: white;
                         transition: all 0.3s ease;
                       }
 
                       .according-menu {
                         i {
-                          color: var(--theme-default);
+                          color: white;
                           transition: all 0.3s ease;
                         }
                       }
@@ -1669,7 +1672,8 @@
                         @extend %sidebar-active-dot;
                       }
                       &.active {
-                        color: var(--theme-default);
+                        color: white;
+                        border-radius: 10px;
                         &::before {
                           opacity: 1;
                           visibility: visible;
@@ -1737,7 +1741,7 @@
                         }
                         &.active {
                           h5 {
-                            color: var(--theme-default);
+                            color: white;
                             &::before {
                               opacity: 1;
                               visibility: visible;
@@ -1770,7 +1774,8 @@
                               }
 
                               &.active {
-                                color: var(--theme-default);
+                              border-radius: 10px;
+                                color: white;
                               }
                             }
                           }
@@ -1830,9 +1835,11 @@
                     transition: all 0.5s ease;
                     position: relative;
                     margin-bottom: 10px;
-                    background-color: lighten($primary-color, 27%);
+                    background-color: #0b57d0;
+                    border-radius: 10px;
                     &::after {
                       opacity: 1;
+                      border-radius: 5px;
                       visibility: visible;
                     }
                     ~ .sidebar-submenu {
@@ -1848,7 +1855,7 @@
                     }
 
                     span {
-                      color: var(--theme-default);
+                      color:white;
                       transition: all 0.3s ease;
                     }
                   }
@@ -1938,10 +1945,10 @@
                   &.active {
                     svg {
                       &.stroke-icon {
-                        stroke: var(--theme-default);
+                        stroke: white;
                       }
                       &.fill-icon {
-                        fill: var(--theme-default);
+                        fill: #0b57d0;
                       }
                     }
                   }
@@ -2009,11 +2016,12 @@
 
               .sidebar-link {
                 &.active {
-                  background-color: rgba($primary-color, 0.2);
+                  background-color: #0b57d0;
+                  border-radius: 10px;
 
                   svg {
-                    color: var(--theme-default);
-                    stroke: var(--theme-default);
+                    color: 'white';
+                    stroke: white;
                   }
                 }
               }
@@ -2036,7 +2044,7 @@
                     }
 
                     &.active {
-                      color: var(--theme-default);
+                      color: 'white';
                     }
                   }
                 }
@@ -2076,6 +2084,7 @@
       transition: 0.8s;
 
       &.active {
+        border-radius: 10px;
         z-index: 8;
         height: 100vh;
         width: 100vw;
@@ -2194,12 +2203,12 @@
                 }
 
                 &.active {
-                  background: rgba($primary-color, 0.1);
-                  color: $primary-color;
+                  background: #0b57d0;
+                  color: 'white';
                   border-radius: 20px;
                   margin: 0 10px;
                   span {
-                    color: $primary-color;
+                    color: white;
                   }
 
                   ~ .sidebar-submenu,
@@ -2248,8 +2257,9 @@
                     }
 
                     &.active {
-                      background-color: rgba($primary-color, 0.1);
-                      color: $primary-color;
+                      border-radius: 10px;
+                      background-color: #0b57d0;
+                      color: white;
                       transition: all 0.3s ease;
                     }
                   }
@@ -2258,7 +2268,8 @@
                     li {
                       a {
                         &.active {
-                          background-color: $transparent-color;
+                        
+                          background-color: #0b57d0;
                         }
                       }
                     }
@@ -2648,7 +2659,7 @@
       background-color: lighten($primary-color, 22%);
     }
     .nav-tabs .nav-link.active {
-      background-color: transparent;
+      background-color: #0b57d0;
     }
     .simplebar-mask {
       top: 10px;

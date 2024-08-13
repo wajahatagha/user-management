@@ -4,6 +4,7 @@ import { MENUITEMS } from "./Menu";
 import SidebarIcon from "./SidebarIcon";
 import SidebarLogo from "./SidebarLogo";
 import SidebarMenu from "./SidebarMenu";
+import Footer from "./Footer";
 
 const Sidebar = (props) => {
   const customizer = useContext(CustomContext);
@@ -112,15 +113,24 @@ const Sidebar = (props) => {
   return (
     <Fragment>
       <div
+      style={{height:'100%'}}
         className="bg-overlay1"
         onClick={() => {
           closeOverlay();
         }}></div>
-      <div className={`sidebar-wrapper ${toggleIcon ? "close_icon" : ""}`} sidebar-layout="stroke-svg">
-        <SidebarIcon />
+      <div style={{height:'100%'}}  className={`sidebar-wrapper  ${toggleIcon ? "close_icon" : ""}`} sidebar-layout="stroke-svg">
+        {/* <SidebarIcon /> */}
+        <div style={{height:'20%'}}>
         <SidebarLogo />
+        </div>
         {/* sidebartoogle={sidebartoogle} */}
+       <div style={{height:'60%', overflow:'auto',scrollbarWidth:'none'}}>
         <SidebarMenu setMainMenu={setMainMenu} props={props} setNavActive={setNavActive} activeClass={activeClass} width={width} />
+        </div>
+      <div  style={{height:'20%', display:'flex', alignItems:'center', justifyContent:'center'}}>
+
+        <Footer />
+        </div>
       </div>
     </Fragment>
   );

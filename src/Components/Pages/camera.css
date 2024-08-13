@@ -30,6 +30,15 @@
     background-color: 'red';
   }
 
+  @media only screen and (max-width: 1200px){
+    .dashHead{
+      margin-top: 20px !important;
+      
+      color: black;
+      
+    }
+  }
+
   @media only screen and (min-width: 1200px) and (max-width: 1400px) { 
     .custom-col-4 { 
       /* flex: 0 0 auto; */

@@ -68,11 +68,11 @@ const Leftbar = () => {
             />
           </Link>
         </div> */}
-        <div className="toggle-sidebar" onClick={() => responsive_openCloseSidebar(sidebartoggle)} style={window.innerWidth <= 991 ? { display: "block" } : { display: "none" }}>
+        <div   className="toggle-sidebar" onClick={() => responsive_openCloseSidebar(sidebartoggle)} style={window.innerWidth <= 991 ? { display: "block", border:'2px solid red' } : { display: "none" }}>
           <AlignCenter className="status_toggle middle sidebar-toggle" id="sidebar-toggle" />
         </div>
       </Col>
-      <Col xl='11' lg='11' md='11' sm='11' xs='11' className="left-header p-0 col-auto">
+      <Col  xl='11' lg='11' md='11' sm='11' xs='11' className="left-header p-0 col-auto">
         <p style={{fontSize:'25px' ,fontWeight:'700' , color:'#6b7280', fontFamily:'M Plus Rounded 1C', marginRight:'3px'}} className='p-0 my-0'>Industrial Safety AI Dashboard</p>
       </Col>
       </Row>
